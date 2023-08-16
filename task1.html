@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BRBUN</title>
+    <style>*,::after,::before{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        margin: 0 100px;
+        background-color: #ffeae0;    
+    }
+    .nav{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 0;
+    }
+    .nav .logo h1{
+        font-weight: 800;
+        font-family: sans-serif;
+        color: #000000;
+        font-size: 60px;
+    }
+    .nav .logo b{
+        color: #ff511c;
+        font-weight: 800;
+        font-size: 60px;
+    }
+    .nav ul{
+        display: flex;
+        list-style: none;
+    }
+    .nav ul li{
+        margin-right: 20px;
+    }
+    .nav ul li a{
+        text-decoration: none;
+        color: #000000;
+        font-weight: 500;
+        font-family: sans-serif;
+        font-size: 17px;
+    }
+    .nav ul .active::after{
+        content:'';
+        width: 50%;
+        height: 3px;
+        background-color: #ff511c;
+        display:flex;
+        position: relative;
+        margin-left: 10px;
+    }
+    input{
+        padding: 10px 25px;
+        cursor: pointer ;
+        font-weight: 600;
+        
+    }
+    .signin{
+        background: transparent;
+        border: none;
+    }
+    .signup{
+        background-color: #ff511c;
+        color: #ffffff;
+        outline: none;
+        border: none;
+        border-radius: 5px;
+    }
+    .content{
+        display: grid;
+        grid-template-columns: 50% auto;
+        gap: 30px;
+        margin-top: 120px;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .content .content-left{
+        display: block;
+        width: 100%;
+    }
+    .content .content-left .info{
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .content .content-left .info h2{
+        font-size: 60px;
+        font-family: sans-serif;
+        margin-bottom: 30px;
+    }
+    .content .content-left .info p{
+        font-size: 23px;
+        line-height: 2pc;
+        margin-bottom: 30px;
+        font-family: sans-serif;
+    }
+    .content .content-left button{
+        padding: 10px 23px;
+        background-color: #ff511c;
+        color: #ffffff;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+    }
+    .content.content-right{
+        display: block;
+        width: 100%;
+    }
+    .content .content-right img{
+        width: 400px;
+        height: auto;
+        position: relative;
+        animation: rotate 10s forwards ;
+    }
+    @keyframes rotate {
+        0%{
+            transform: rotate(0deg);
+        }
+        100%{
+            transform: rotate(360deg);
+        }
+    }
+    </style>
+</head>
+<body>
+ <section class="menu">
+<div class="nav">
+ <div class="logo"><h1>BRB<b>UN</b></h1></div> 
+ <ul>
+    <li><a class="active"href="#">Home</a></li>
+    <li><a href="#">Menu</a></li>
+    <li><a href="#">Service</a></li>
+    <li><a href="#">About Us</a></li>
+    <li><a href="#">Gallery</a></li>
+</ul>
+<div>  
+    <input class="signin" type="Submit" value="signin">
+    <input class="signup" type="Submit" value="signup">
+</div>
+</section>
+<section class="grid">
+    <div class="content">
+        <div class="content-left">
+            <div class="info">
+                <h2>Order your best <br>Food Anytime</h2>
+                <p>Hey, Our delicious food is waiting for you,<br>
+                we are always near to you with fresh item of food</p>
+
+            </div>
+            <button>Explore Food</button>
+        </div>
+        <div class="content-right">
+            <img src="image/fooddish.png" alt="">
+        </div>
+        
+    </div>
+</section> 
+</body>
+</html>
